@@ -1,0 +1,154 @@
+.footer {
+    .bg {
+        background: #5A98D0;;
+        position: relative;
+
+    }
+    .bg2 {
+        background: #316099;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 96px;
+        @media (max-width: 1023px) {
+            right: 0;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 15;
+        padding-bottom: 64px;
+        
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+    &__icon {
+        width: 48px;
+    }
+    &__name {
+        font-size: 28px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+    &__title {
+        font-family: Gilroy;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+    &__contacts {
+        display: flex;
+        padding-top: 97px;
+        @media (max-width: 1279px) {
+            margin-left: 30px;
+        }
+        @media (max-width: 1023px) {
+            flex-flow: wrap;
+            justify-content: space-between;
+            margin-left: 40px;
+        }
+        @media (max-width: 767px) {
+            flex-flow: column;
+            align-items: center;
+            margin-left: 0;
+        }
+    }
+    
+    &__contacts-item {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-top: 24px;
+        display: flex;
+        &:nth-child(1)::before {
+            content: "A.";
+            display: block;
+            margin-right: 15px;        
+        }
+        &:nth-child(2)::before {
+            content: "T.";  
+            display: block;
+            margin-right: 15px;       
+        }
+        &:nth-child(3)::before {
+            content: "E.";   
+            display: block;
+            margin-right: 15px;       
+        }
+        @media (max-width: 767px) {
+            width: 250px;
+            margin-left: 25px;
+        }
+    }
+    &__logo {
+        margin-bottom: 33px;
+    }
+    &__list-item {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+    &__contacts-data {
+        width: 300px;
+        @media (max-width: 1023px) {
+            width: 40%;
+            margin-right: 7px;
+        }
+        @media (max-width: 767px) {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__about-us {
+        margin: 0 77px 0 100px;
+        @media (max-width: 1023px) {
+            margin: 0;
+            width: 40%;
+        }
+        @media (max-width: 767px) {
+            width: 90%;
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    &__follow-us {
+        @media (max-width: 1023px) {
+            margin-top: 50px;
+            width: 40%;
+
+        }
+        @media (max-width: 767px) {
+            width: 90%;
+            text-align: center;
+        }
+    }
+    &__copyright {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.4;
+        font-weight: 300;
+        margin-top: 64px;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
