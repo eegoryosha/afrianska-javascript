@@ -46,13 +46,14 @@ body {
     font-family: $mainFont;
     background-color: $mainColor;
     width: 100%;
-    
+
 }
 
 
 
 .container {
     max-width: $container+30;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -75,4 +76,3 @@ img {
     position: relative;
     z-index: 20;
 }
-

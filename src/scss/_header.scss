@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.nav {
+    margin: 0 auto;
+
+    max-width: 1250px;
+    padding: 40px 25px 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__main-logo {
+        width: 48px;
+        height: 48px;
+    }
+    &__navicon {
+        width: 32px;
+        height: 32px;
+        @media (max-width: 1023px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.main {
+    height: 100vh;
+    max-height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+
+    &::before {
+        content: '';
+        background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+        opacity: 0.2;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        @media (max-width: 1023px) {
+            justify-content: center;
+        }
+    }
+    &__description {
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 1023px) {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 200px;
+        }
+    }
+    &__bg-image-box {
+        position: absolute;
+        top: 52%;
+        transform: translate(0, -48%);
+        left: 48%;
+        max-width: 50%;
+        @media (max-width: 1023px) {
+            max-width: 100%;
+            width: 100%;
+            max-width: 512px;
+            bottom: 0;
+            top: auto;
+            left: auto;
+            right: 0;
+            transform: translate(0, 0);
+        }
+        img {
+            min-width: 512px;
+        }
+    }
+    &__title {
+        width: 512px;
+        height: 148px;
+        font-family: $titleFont;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        @media (max-width: 767px) {
+            width: 75%;
+            margin: 0 auto;
+            height: auto;
+            text-align: center;
+            font-size: calc(45px + 19 * (100vw / 1366));
+            line-height: 90%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+
+    }
+    &__text {
+        width: 425px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: $textOpacity;
+        margin: 32px 0 71px 0;
+        @media (max-width: 1023px) {
+            margin: 32px auto 32px auto;
+        }
+        @media (max-width: 767px) {
+            width: 75%;
+            text-align: center;
+            font-size: calc(12px + 4 * (100vw / 1366));
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+    &__btn-project {
+        width: 220px;
+        height: 56px;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: #fff;
+        @media (max-width: 1023px) {
+           align-self: center;
+        }
+        &:hover {
+            filter: brightness(1.25);
+            cursor: pointer;
+        }
+    }
+}

@@ -18,26 +18,30 @@
                 <img src="icons/icons.svg#Navicon" alt="Navicon" class="nav__navicon"/>
             </a>
         </div>
+    </header>
+
+    <section id="main" class="main">
         <div class="container">
-            <div class="header__wrapper">
-                <div class="header__description">
-                    <div class="header__title">
+            <div class="main__wrapper">
+                <div class="main__description">
+                    <div class="main__title">
                         <h1>New Automation Tool for Your Home</h1>
                     </div>
-                    <div class="header__text">
+                    <div class="main__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
                     </div>
-                    <button class="header__btn-project">
+                    <button class="main__btn-project">
                         See Our Project
                     </button>
                 </div>
-                
+
             </div>
         </div>
-        <div class="header__bg-image-box">
-            <img src="img/header.png" alt="" class="header__bg-image">
+        <div class="main__bg-image-box">
+            <img src="img/header.png" alt="" class="main__bg-image">
         </div>
-    </header>
+    </section>
+
     <section id="about" class="about">
         <div class="container">
             <div class="about__title">
@@ -52,7 +56,7 @@
                         Bring Technology To Your Comfrotable Home
                     </div>
                     <div class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                     <div class="card__btn">
                         Learn more
@@ -69,7 +73,7 @@
                         Make Your business To Be Better Famous In Internet
                     </div>
                     <div class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                     <div class="card__btn">
                         Learn more
@@ -86,7 +90,7 @@
                         Build Your Digital Product That Suitable For Your Need
                     </div>
                     <div class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                     <div class="card__btn">
                         Learn more
@@ -95,8 +99,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
@@ -138,10 +142,10 @@
             </div>
         </div>
     </section>
-   
+
     <section id="offer" class="offer">
-        <div class="bg">
-            <div class="bg2"></div>
+        <div class="background-blue">
+            <div class="background-dark-blue"></div>
             <div class="container">
                 <div class="offer__content">
                     <div class="offer__description">
@@ -158,10 +162,10 @@
             <div class="divider"></div>
         </div>
     </section>
-    
+
     <footer id="footer" class="footer">
-        <div class="bg">
-            <div class="bg2"></div>
+        <div class="background-blue">
+            <div class="background-dark-blue"></div>
             <div class="container">
                 <div class="footer__contacts">
                     <div class="footer__contacts-data">
@@ -196,10 +200,10 @@
                 </div>
                 <div class="footer__copyright">
                     2019 © Afrianska. All rights reserved.
-                </div> 
+                </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 
     <div class="modal hide">
         <div class="modal__dialog">
@@ -211,30 +215,33 @@
                         <div class="modal__input-title">Full Name</div>
                         <small class="modal__error-message hide">Error Message</small>
                     </div>
-                    
-                    <input placeholder="Your Name" name="name" type="text" class="modal__input">
+
+                    <input placeholder="Your Name" name="name" type="text" class="modal__input form-control validate">
                 </div>
                 <div class="modal__wrapper">
                     <div class="modal__input-text">
                         <div class="modal__input-title">Email</div>
                         <small class="modal__error-message hide">Error Message</small>
                     </div>
-                    
-                    <input placeholder="Your Email" name="email" type="text" class="modal__input">
+
+                    <input placeholder="Your Email" name="email" type="text" class="modal__input form-control validate">
                 </div>
                 <div class="modal__wrapper">
-                    <div class="modal__input-title">Message</div>
-                    <textarea placeholder="Your Message" name="message" id="message" maxlength="80" class="modal__input"></textarea>
+                    <div class="modal__input-text">
+                        <div class="modal__input-title">Message</div>
+                        <small class="modal__error-message hide">Error Message</small>
+                    </div>
+                    <textarea placeholder="Your Message" name="message" id="message" maxlength="80" class="modal__input form-control validate"></textarea>
                 </div>
                 <div class="modal__status-message">
 
                 </div>
-                <button class="modal__submit">SUBMIT</button> 
-            </form> 
+                <button type="submit" class="modal__submit">SUBMIT</button>
+            </form>
         </div>
-    </div> 
+    </div>
 
-   
+
 
     <script src="js/bundle.js"></script>
 </body>
